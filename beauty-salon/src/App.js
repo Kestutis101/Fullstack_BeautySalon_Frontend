@@ -7,7 +7,7 @@ import CreateClient from "./components/UI/organisms/CreateClient/CreateClient";
 import HandleBadRequest from "./components/UI/atoms/HandleBadRequest/HandleBadRequest";
 import Register from "./components/UI/molecules/Register/Register";
 
-export const DB_URL = "https://fullstack-beauty-salon-backend.vercel.app//";
+export const DB_URL = "https://fullstack-beauty-salon-backend.vercel.app/";
 export const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function App() {

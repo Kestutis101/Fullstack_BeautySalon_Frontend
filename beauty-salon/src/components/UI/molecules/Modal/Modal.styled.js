@@ -16,7 +16,7 @@ export const StyledBackground = styled.div`
 export const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #eaeaea;
+  background-color: #6b6a6a;
   margin: 50px;
   padding: 20px;
   border-radius: 5px;

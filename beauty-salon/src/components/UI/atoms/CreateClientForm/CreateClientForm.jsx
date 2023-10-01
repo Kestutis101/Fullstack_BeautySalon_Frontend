@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Header from "../../atoms/Header/Header";
 import { useNavigate } from "react-router-dom";
 import { StyledForm } from "./CreateClientForm.styled";
 import { DB_URL } from "../../../../App";
@@ -49,7 +48,7 @@ export default function CreateClientForm() {
     try {
       await axios.post(DB_URL + "clients/register", formData);
       setPostedClient(
-        "Client was successfully created, redirecting to clients in..."
+        "Client was successfully created, redirecting to clients"
       );
       setTimeout(() => {
         navigate("/clients");
@@ -66,7 +65,6 @@ export default function CreateClientForm() {
 
   return (
     <>
-      <Header />
       <StyledForm onSubmit={handleSubmit}>
         <div>
           <h1>Client Registration</h1>
@@ -127,7 +125,7 @@ export default function CreateClientForm() {
           style={{
             textAlign: "center",
             fontSize: "2rem",
-            color: postedClient ? "black" : "red",
+            color: postedClient ? "#B0B0B0" : "red",
           }}
         >
           {postedClient || errorMessage}

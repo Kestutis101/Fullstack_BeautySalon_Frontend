@@ -11,14 +11,15 @@ export const StyledBackground = styled.div`
   right: 0;
   left: 0;
   bottom: 0;
+  z-index: 1;
 `;
 
 export const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #6b6a6a;
-  margin: 50px;
-  padding: 20px;
+  margin: auto;
+  padding: 1.2em;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -78,7 +79,7 @@ export const StyledCard = styled.div`
   }
 
   span {
-    color: red;
+    color: #FE5757;
   }
 
   .nothing-change {
@@ -86,4 +87,52 @@ export const StyledCard = styled.div`
     text-align: center;
     margin: 1rem;
   }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+  flex-direction: column;
+  background-color: #6b6a6a;
+  margin: auto;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-width: 60vw;
+  max-height: 80vw;
+  width: 100%;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin: 0 0 0.8rem 0;
+    text-align: center;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.6rem;
+    font-size: 1em;
+
+    input {
+      border: none;
+      border-radius: 5px;
+      padding: 0.3rem;
+      font-size: 0.9rem;
+
+      :focus {
+        outline: none;
+        background-color: #f8dda3;
+      }
+    }
+  }
+
+  button {
+    background-color: #6de554;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    }
 `;

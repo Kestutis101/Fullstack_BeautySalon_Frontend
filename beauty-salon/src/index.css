@@ -1,5 +1,5 @@
 body {
-  background-image: url("../public/black-concrete-wall.jpg");
+  background-image: url("./assets/black-concrete-wall.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.9;

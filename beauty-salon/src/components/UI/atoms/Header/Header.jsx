@@ -1,13 +1,15 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { StyledDiv, StyledImg } from "./Header.styled";
+import logoImage from "../../../../assets/logo_image.png";
 
 export default function Header() {
   const [jwtToken, setJwtToken] = useState(localStorage.getItem("jwtToken"));
 
   useEffect(() => {
-    setJwtToken(localStorage.getItem("jwtToken"));
-  }, []);
+    const storedToken = localStorage.getItem("jwtToken");
+    setJwtToken(storedToken);
+  }, [localStorage.getItem("jwtToken")]);
 
   function handleLogout() {
     localStorage.removeItem("jwtToken");
@@ -35,10 +37,7 @@ export default function Header() {
     <>
       <StyledDiv>
         <div>
-          <StyledImg
-            src='https://png.pngtree.com/png-clipart/20211116/original/pngtree-salon-logo-png-image_6942006.png'
-            alt='logo'
-          />
+          <StyledImg src={logoImage} alt='logo' />
           <p>Beauty Salon</p>
         </div>
         <nav>

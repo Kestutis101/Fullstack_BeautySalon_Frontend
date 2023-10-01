@@ -26,7 +26,7 @@ export const StyledForm = styled.form`
   button {
     border-radius: 10px;
     background-color: #f1f1f1;
-    box-shadow: none;
+    border: none;
     font-size: 0.7em;
     outline: none;
     cursor: pointer;
@@ -37,6 +37,23 @@ export const StyledForm = styled.form`
       background-color: #c79e47;
       box-shadow: 1px 1px 3px 2px grey;
       color: white;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    label {
+      width: 80%; 
+      font-size: 1em;
+    }
+
+    input {
+      width: 70%;
+      font-size: 0.8em;
+    }
+
+    button {
+      width: 20%; 
+      font-size: 0.8em;
     }
   }
 `;

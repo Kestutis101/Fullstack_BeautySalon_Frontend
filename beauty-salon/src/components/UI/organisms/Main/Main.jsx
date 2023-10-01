@@ -1,18 +1,16 @@
 import React from "react";
-import Header from "../../atoms/Header/Header";
 import {
   StyledMainDiv,
   StyledDiv,
   StyledImg,
   StyledImgDiv,
 } from "./Main.styled";
-import Footer from "../../atoms/Footer/Footer";
 
 export default function Main({ handleLogged }) {
   handleLogged();
+
   return (
     <>
-      <Header />
       <StyledMainDiv>
         <StyledDiv>
           <p>Welcome to our exquisite beauty salon experience.</p>
@@ -57,7 +55,6 @@ export default function Main({ handleLogged }) {
             alt='white men in profile picture haircut'
           />
         </StyledImgDiv>
-        <Footer />
       </StyledMainDiv>
     </>
   );

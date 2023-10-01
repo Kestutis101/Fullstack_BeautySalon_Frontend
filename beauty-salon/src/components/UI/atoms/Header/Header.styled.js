@@ -46,6 +46,27 @@ export const StyledDiv = styled.div`
       top: -0.2em;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    display: block;
+    text-align: center;
+
+    img {
+      width: 50%; 
+      height: auto;
+      margin: 0 auto; 
+    }
+
+    div {
+     display: flex;
+     flex-direction: column;
+     width: auto;
+      p {
+        margin: 0 auto 2rem;
+        font-size: 3em;
+      }
+    }
+  }
 `;
 
 export const StyledImg = styled.img`

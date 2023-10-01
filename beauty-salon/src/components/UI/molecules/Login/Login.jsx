@@ -3,8 +3,6 @@ import axios from "axios";
 import LoginForm from "../../atoms/LoginForm/LoginForm";
 import { useNavigate } from "react-router-dom";
 import { DB_URL } from "../../../../App";
-import Header from "../../atoms/Header/Header";
-import Footer from "../../atoms/Footer/Footer";
 
 export default function Login({ handleLogged }) {
   const [email, setEmail] = useState("");
@@ -36,7 +34,6 @@ export default function Login({ handleLogged }) {
 
   return (
     <div>
-      <Header />
       <LoginForm
         email={email}
         setEmail={setEmail}
@@ -45,7 +42,6 @@ export default function Login({ handleLogged }) {
         action={handleLogin}
         errorMessage={errorMessage}
       />
-      <Footer />
     </div>
   );
 }

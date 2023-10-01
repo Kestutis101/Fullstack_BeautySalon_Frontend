@@ -5,6 +5,11 @@ export const StyledMainDiv = styled.div`
   font-family: "Caveat", cursive;
   font-size: 1.5em;
   margin: 0 auto;
+
+  @media screen and (max-width: 600px) {
+    width: 80%;
+    font-size: 1.1em;
+  }
 `;
 
 export const StyledHeadingOne = styled.h1`
@@ -17,7 +22,7 @@ export const StyledTable = styled.table`
 `;
 
 export const StyledTableCell = styled.td`
-  padding: 10px;
+  padding: 0.5em;
 `;
 
 export const StyledButtonEdit = styled.button`
@@ -25,7 +30,7 @@ export const StyledButtonEdit = styled.button`
   border: none;
   border-radius: 5px;
   box-shadow: none;
-  padding: 5px 10px;
+  padding: 0.35em 0.8em;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s;
 
@@ -40,7 +45,7 @@ export const StyledButtonDelete = styled.button`
   border: none;
   border-radius: 5px;
   box-shadow: none;
-  padding: 5px 10px;
+  padding: 0.35em 0.8em;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s;
 

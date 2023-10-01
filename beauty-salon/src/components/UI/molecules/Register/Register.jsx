@@ -3,8 +3,6 @@ import axios from "axios";
 import RegisterForm from "../../atoms/RegisterForm/RegisterForm";
 import { useNavigate } from "react-router-dom";
 import { DB_URL } from "../../../../App";
-import Header from "../../atoms/Header/Header";
-import Footer from "../../atoms/Footer/Footer";
 
 export default function Register() {
   const [email, setEmail] = useState("");
@@ -40,7 +38,6 @@ export default function Register() {
 
   return (
     <div>
-      <Header />
       <RegisterForm
         email={email}
         setEmail={setEmail}
@@ -49,7 +46,6 @@ export default function Register() {
         action={handleRegister}
         message={message}
       />
-      <Footer />
     </div>
   );
 }

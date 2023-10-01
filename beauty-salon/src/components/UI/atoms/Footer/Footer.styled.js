@@ -4,6 +4,10 @@ export const StyledFooter = styled.footer`
 font-family: "Caveat", cursive;
   text-align: center;
   margin: 0.5em auto 2rem;
+
+  @media screen and (max-width: 600px) {
+  font-size: medium;
+}
 `;
 
 export const StyledIconsDiv = styled.div`
@@ -22,4 +26,8 @@ export const StyledIconsDiv = styled.div`
       top: -0.2em;
     }
   }
+
+  @media screen and (max-width: 600px) {
+  font-size: medium;
+}
 `;

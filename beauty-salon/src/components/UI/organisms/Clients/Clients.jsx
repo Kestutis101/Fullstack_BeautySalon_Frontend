@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Header from "../../atoms/Header/Header";
 import Modal from "../../molecules/Modal/Modal";
-import Footer from "../../atoms/Footer/Footer";
 import { DB_URL } from "../../../../App";
 
 import {
@@ -56,7 +54,6 @@ export default function Clients() {
 
   return (
     <>
-      <Header />
       <StyledMainDiv>
         <StyledHeadingOne>Clients</StyledHeadingOne>
         <StyledTable>
@@ -96,7 +93,6 @@ export default function Clients() {
           onUserListUpdate={fetchUsers}
         />
       )}
-      <Footer />
     </>
   );
 }

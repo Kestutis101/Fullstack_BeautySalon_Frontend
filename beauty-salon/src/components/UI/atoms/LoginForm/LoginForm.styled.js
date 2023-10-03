@@ -111,7 +111,7 @@ export const StyledMainDiv = styled.div`
 
     form {
       label {
-        width: 12%; /* Adjust label width for smaller screens */
+        width: 20%; /* Adjust label width for smaller screens */
       }
 
       input {

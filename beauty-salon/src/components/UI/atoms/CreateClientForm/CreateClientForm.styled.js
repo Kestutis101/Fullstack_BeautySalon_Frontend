@@ -42,18 +42,17 @@ export const StyledForm = styled.form`
 
   @media screen and (max-width: 600px) {
     label {
-      width: 80%; 
+      min-width: 70%; 
       font-size: 1em;
     }
 
     input {
-      width: 70%;
+      width: 55%;
       font-size: 0.8em;
     }
 
     button {
-      width: 20%; 
-      font-size: 0.8em;
+      width: 20%;
     }
   }
 `;

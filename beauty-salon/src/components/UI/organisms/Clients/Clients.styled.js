@@ -7,7 +7,7 @@ export const StyledMainDiv = styled.div`
   margin: 0 auto;
 
   @media screen and (max-width: 600px) {
-    width: 80%;
+    width: 100%;
     font-size: 1.1em;
   }
 `;
